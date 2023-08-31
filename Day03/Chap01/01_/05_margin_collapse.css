@@ -1,0 +1,23 @@
+
+.container {
+    position: relative;
+    width: 1200px;
+    height: auto;
+    border: 5px dashed orange;
+    margin: 100px auto; /* m100-auto */
+    text-align: center;
+}
+
+section {
+    margin: 100px auto; /* m100-auto */
+    width: 900px;
+    height: 200px;
+    border: 3px solid gray;
+    /* border3-solid-gray */
+}
+
+/* 이렇게 하면 마진겹침이 생긴다. */
+
+.solve-1 { padding: 50px 0;}
+.solve-2 { border-top: 1px solid hotpink;}
+.solce-3 { margin-top: 0; margin-bottom: 200px;}

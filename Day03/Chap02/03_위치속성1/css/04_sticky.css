@@ -1,0 +1,71 @@
+
+h1 { text-align: center; }
+
+.container {
+    position: relative;
+    width: 1200px;
+    height: 3000px;
+    border: 10px dashed orange;
+    margin: auto;
+}
+
+.container div {
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 48px;
+    border-radius: 10%;
+}
+
+/* position : sticky; */
+.container .sticky {
+    /* 
+        스크롤 영역 안 : relative
+        스크롤 영역 밖 : fixed
+    */
+    /* 👩‍💻TODO: 여기에 작성해보세요:) */        
+    position: sticky;     
+    border: 3px solid black;
+}
+
+/* 초기위치 */
+.container .base {
+    position: absolute;
+    border: 3px dashed #ddd;
+    color: #ddd;
+    z-index: -1;
+}
+
+.first { top: 100px; float: left; background-color: red; }
+.second { top: 100px; float: right; background-color: green; }
+.third { top: 100px; float: left; background-color: yellow; }
+.fourth { top: 100px; float: right; background-color: blue; }
+
+.fifth { top: 0; left: 500px; }
+.sixth { top: 200px; left: 500px; }
+.seventh { top: 400px; left: 500px; }
+.eighth { top: 600px; left: 500px; }
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: cornflowerblue;
+    color: white;
+    font-size: 40px;
+    line-height: 80px;
+    text-align: center;
+}
+
+.box {
+    width: 1200px !important;
+    height: 300px !important;
+    margin-top: 80px;
+    border-radius: 0 !important;
+    background-color: royalblue;
+}

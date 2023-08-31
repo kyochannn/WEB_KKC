@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>하이퍼 링크 - anchor</title>
+</head>
+<body>
+    <!-- 
+        a 태그 > anchor의 줄임말이다.
+
+        * 속성
+        - href : 이동할 경로(파일경로, URL, id속성)
+        - 경로
+        * 절대 경로 : href="http://www.nacer.com"   다른 웹사이트로 이동
+        * 상대 경로 : href="../../test.html"        상위 경로의 다른 문서
+        * 문서 내부 : href="#text"                  id 속성이 text 인 요소로 이동
+     -->
+     <a href="http://www.naver.com" target="_blank">네이버 (새 창)</a>
+     <a href="http://www.naver.com" target="_self">네이버 (현재 창)</a>
+     <a href="#botton" id="top">맨 아래로 이동</a>
+
+     <div style="height: 1000px;"></div>
+
+     <p>
+        연락처 <br>
+        <!-- 이메일 링크 (mailto:[이메일주소]) -->
+        <a href="mailto:wwwaloha@kakao.com">wwwaloha@kakao.com</a>
+     </p>
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table - 표 형태의 데이터를 표시하는 태그</title>
+</head>
+<body>
+    <!-- 
+        table
+        - tr 표의 하나의 행을 표기
+        - th 표의 제목 행의 열 표시
+                    * 텍스트를 bold체로 가운데 정렬해준다.
+        - td 표 한 칸의 열(data)을 표시
+     -->
+
+     <h1>카페 메뉴판</h1>
+    <table border="1">
+        <tr>
+            <th width="200">menu</th>
+            <th width="100">price</th>
+            <th width="100">hot/ice</th>
+        </tr>
+        <tr>
+            <tr>
+                <td>아메리카노</td>
+                <td align="center">2,500</td>
+                <td align="center">hot/ice</td>
+            </tr>
+            <tr>
+                <td>카페모카</td>
+                <td align="center">3,500</td>
+                <td align="center">hot/ice</td>
+            </tr>
+            <tr>
+                <td>자바칩 프라프치노</td>
+                <td align="center">5,500</td>
+                <td align="center">hot/ice</td>
+            </tr>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h1>영화관 좌석표</h1>
+    <table border="1">
+        <tr>
+            <th width="100">1열</th>
+            <th width="100">2열</th>
+            <th width="100">3열</th>
+        </tr>
+        <tr>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+        </tr>
+        <tr>
+            <th rowspan="2">4</th>
+            <th>5</th>
+            <th>6</th>
+        </tr>
+        <tr>
+            <th colspan="3">7</th>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h1>월별 수입</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>월별</th>
+                <th>수입</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1월</td>
+                <td>1,000,000</td>
+            </tr>
+            <tr>
+                <td>2월</td>
+                <td>1,500,000</td>
+            </tr>
+            <tr>
+                <td>3월</td>
+                <td>2,000,000</td>
+            </tr>
+            <tr>
+                <td>4월</td>
+                <td>2,500,000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>합계</td>
+                <td>7,000,000</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <hr>
+
+    <h1>핸드폰의 종류</h1>
+    <table border="1">
+        <tr>
+            <th width="100px">애플</th>
+            <th width="100px">삼성</th>
+            <th width="100px">구글</th>
+            <th width="100px">LG</th>
+        </tr>
+        <tr>
+            <td>아이폰 14pro</td>
+            <td>갤럭시 23</td>
+            <td rowspan="3">모르긴 해</td>
+            <td rowspan="3">이것도</td>
+        </tr>
+        <tr>
+            <td>아이폰 13</td>
+            <td>갤럭시 22</td>
+        </tr>
+        <tr>
+            <td>아이폰 12</td>
+            <td>갤럭시 21</td>
+        </tr>
+    </table>
+</body>
+</html>
+
+<!-- 
+    테이블에서 중요한 것에 대해서 알아보자
+    테이블은 table라는 태그를 사용하고, 테이블을 사용했는데 표가 나오지 않는다면,
+    border=""을 해주지 않아서 그렇다.
+    tr은 테이블의 행을 나타내준다.
+    th는 테이블 제목행을 나태내 주고 가운데 정렬에 bold처리 해준다.
+    td는 테이블의 각가의 data를 의미한다.
+
+    테이블은 영역을 나눌수도 있는데 
+    thead, tbody, tfoot으로 나눌 수 있다.
+    그렇게 나누어주면 테이블이 각 영역에서 논다는 것을 알 수 있다.
+ -->

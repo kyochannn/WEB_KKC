@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic Layout</title>
+    <style>
+        * { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: black;
+            height: 80px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            float: left;
+            display: block;
+            width: 100px;
+            height: 100%;
+            padding: 10px 20px;
+            line-height: 60px;
+            text-align: center;
+        }
+
+        nav a:hover {
+            background-color: cornflowerblue;
+        }
+
+        section {
+            margin: 0 auto;
+            width: 1024px;
+            background-color: lightblue;
+            border: 1px solid black;
+            padding: 10px;
+            min-height: 200px;
+        }
+
+        footer {
+            background-color: lightgray;
+            min-height: 80px;
+        }
+
+        footer .copy {
+            float: left;
+            line-height: 80px;
+            padding: 0px 20px;
+        }
+
+        footer .family {
+            float: right;
+            line-height: 80px;
+            min-width: 120px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="http://naver.com">네이버</a>
+            <a href="http://kakao.com">카카오</a>
+            <a href="http://youtube.com">유튜브</a>
+        </nav>
+    </header>
+
+    <section>
+        <h1>My Page</h1>
+        <p>My Page 에 오신 걸 환영합니다~!</p>
+    </section>
+
+    <section>
+        <h1>2번째 섹션</h1>
+        <p>2번째 영역 입니다~!</p>
+        <article>
+            청춘이 간에 생의 그와 그들은 칼이다. 같이, 그와 얼마나 할지니, 방황하여도, 무엇을 부패뿐이다. 앞이 예가 인류의 하는 사막이다. 길을 방황하였으며, 능히 그러므로 돋고, 이것이다. 길지 거친 역사를 인생의 싶이 교향악이다. 가치를 생의 날카로우나 고행을 가치를 무엇이 트고, 낙원을 같으며, 이것이다. 뜨고, 있음으로써 맺어, 살 옷을 넣는 그들에게 아름다우냐? 사랑의 돋고, 아니한 곳으로 약동하다. 얼마나 청춘의 내려온 동력은 것이다. 구하지 것은 같은 소리다.이것은 목숨을 교향악이다. 같이, 풍부하게 주는 이것이야말로 역사를 인생의 타오르고 그들은 이것이다.
+        </article>
+    </section>
+
+    <section>
+        <h1>3번째 섹션</h1>
+        <p>3번째 섹션입니다</p>
+    </section>
+
+    <footer>
+        <p class="copy">Copyright ⓒ ALOHA CLASS. All Rights Reserved</p>
+        <p class="family">
+            <select name="family">
+                <option value="1">네이버</option>
+                <option value="2">카카오</option>
+                <option value="3">유튜브</option>
+            </select>
+        </p>
+    </footer>
+</body>
+</html>

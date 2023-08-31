@@ -1,0 +1,22 @@
+.container {
+    position: relative;
+    width: 1200px;
+    border: 8px solid orange;
+    /* border3-s-orange */
+    text-align: center;
+}
+
+.item {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    border: 1px solid gray;
+    /* border1-solid-gray */
+    background-color: #ddd;
+}
+
+
+.box1 { padding: 20px 40px 80px 100px; }
+.box2 { padding: 20px 40px 80px; }
+.box3 { padding: 20px 40px; }
+.box4 { padding: 20px; }

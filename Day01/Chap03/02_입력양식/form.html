@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <!-- 
+        form 태그
+        : 클라이언트에서 서버로 데이터를 제출해주는 양식 태그
+
+        - form 태그 속성
+        action      : 데이터를 받아서 처리할 URL 경로 지정
+        method      : 데이터를 보내는 방식을 지정 (GET, POST)
+
+        * GET		: 	URL 주소 뒤에 파리미터(쿼리스트링)를 붙여 전달하는 방식
+							ex. input.jsp?input1=100&input2=200		: "?input1=100&input2=200" (쿼리스트링)
+							
+        * POST		:  	URL 주소에 파라미터(쿼리스트링)을 붙이지 않고 HTTP Request 헤더에 데이터를 포함시켜 전송하는 방식 
+    
+        * GET vs. POST
+        : - GET		:   글자 수 제한 (최대 2048글자)
+                        데이터 노출
+                        북마크 가능
+                        뒤로가기 가능
+                        
+          - POST	:	길이 제한 없음
+                        데이터 보안
+                        북마크 불가
+                        뒤로가기 불가
+    -->
+
+    <h1>로그인</h1>
+    <form action="login" method="get">
+        <label for="id">아이디</label>
+        <input type="text" name="user_id" id="id"> <br>
+
+        <label for="pw">비밀번호</label>
+        <input type="password" name="user_pw" id="pw"> <br>
+
+        <input type="submit" value="로그인">
+    </form>
+
+    <hr>
+
+    <form action="input" method="post">
+
+        ID      : <input type="text" name="id"> <br>
+        PW      : <input type="password" name="password"> <br>
+        email   : <input type="email" name="email"> <br>
+        url     : <input type="url" name="url"> <br>
+        tel     : <input type="tel" name="tel"> <br>
+        color   : <input type="color" name="color"> <br>
+
+        radio (성별)
+                <label for="female">여자</label>
+                <input type="radio" name="gender" id="female" value="female">
+                
+                <label for="male">남자</label>
+                <input type="radio" name="gender" id="male" value="male">
+                <br>
+
+        checkbox(취미)
+                <label for="exercise">운동</label>
+                <input type="checkbox" name="hobby" id="exercise" value="exercise">
+
+                <label for="movie">영화감상</label>
+                <input type="checkbox" name="hobby" id="movie" value="movie">
+
+                <label for="book">독서</label>
+                <input type="checkbox" name="hobby" id="book" value="book">
+                <br>
+        date                : <input type="date" name="date"> <br>
+        month               : <input type="month" name="month"> <br>
+        time                : <input type="time" name="time"> <br>
+        datetime-local      : <input type="datetime-local" name="datetime-local"> <br>
+
+        number              : <input type="number" name="number" min="1" max="100" step="1"> <br>
+        range               : <input type="range" name="range" min="1" max="100" step="1"> <br>
+
+        <label for="email2">이메일 : </label>
+        <input type="text" name="email2" id="email2">
+        @
+        <select name="domain" id="domain">
+            <option value="1">naver.com</option>
+            <option value="2">nate.com</option>
+            <option value="3">kakao.com</option>
+            <option value="4">gmail.com</option>
+        </select>
+        <br>
+
+        <textarea name="content" id="content" cols="30" rows="10"></textarea>
+
+    </form>
+    
+</body>
+</html>

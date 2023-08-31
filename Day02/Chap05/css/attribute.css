@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+section {
+    margin: 20px 0;
+}
+
+section[id$='2']{
+    background-color: yellow;
+    padding: 10px;
+}
+
+div[class$='4']{
+    background-color: grey;
+    padding: 10px;
+}
+
+div.lst1:first-child {
+    background-color: red
+}
+
+div.lst1:nth-of-type(4) {
+    background-color: pink;
+}

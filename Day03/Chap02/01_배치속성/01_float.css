@@ -1,0 +1,22 @@
+.container {
+    position: relative;
+    width: 1024px;
+    border: 5px dashed orange;
+    margin: auto;
+}
+
+.item {
+    border: 2px solid #ddd;
+    height: 300px;
+}
+
+img.left { float:left ; }
+img.right { float:right; }
+
+/* 
+    float는 뜨다 라는 뜻으로  원래 웹페이지에서 이미지를 어떻게 띄워서 
+    텍스트와 함께 배치할 것인가에 대한 속성이다.
+
+    하지만 float 속성은 원래 이미지와 텍스트 배치 용도로 등장했지만, 
+    요즘에는 레이아웃용으로 많이 사용한다.
+*/

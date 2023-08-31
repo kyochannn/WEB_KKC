@@ -1,0 +1,38 @@
+.container {
+    position: relative;
+    width: 1200px;
+    border: 8px solid orange;
+    /* border3-s-orange */
+    text-align: center;
+}
+
+.item {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    border: 1px solid gray;
+    /* border1-solid-gray */
+    background-color: #ddd;
+}
+
+.box1 {
+    padding: 20px;
+    box-sizing: content-box;
+    /* box-sizing: content-box;
+        가 기본값이다.
+    */
+
+    /*
+        border-box
+        : content + padding + border 를 포함하여
+          박스의 크기로 지정 
+     */
+}
+
+.box2 {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+/*  box-sizing 에 대해서 자세히 볼 것 */
