@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object2</title>
+    <script>
+        function Person(name, age) {
+            this.name = name
+            this.age = age
+        }
+
+        let person = new Person('구교찬', 20)
+
+        document.write(`내 이름은 ${person.name} 이고 <br>`)
+        document.write(`내 나이는 ${person.age} 이다. <br>`)
+
+        delete person.age
+        document.write(`내 이름은 ${person.name} 이고 <br>`)
+        document.write(`내 나이는 ${person.age} 이다. <br>`)
+
+        let person2 = new Person('양바른', 22)
+        document.write(`내 이름은 ${person2["name"]} 이고 <br>`)
+        document.write(`내 나이는 ${person2["age"]} 이다. <br>`)
+
+        person2.printInfo() = function() {
+            return this.name + '(' + this.age + ')'
+        }
+
+        person2.printInfo()
+
+
+        Person.prototype.getInfo = function() {
+            document.write( this.name )
+        }
+
+        person.getInfo()
+        // person2.getInfo()
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

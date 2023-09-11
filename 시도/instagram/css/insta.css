@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.iphone {
+    margin: 200px ;
+}
+
+body {
+    /* background-color: black; */
+    background-image: url("../img/iphone.png");
+    background-repeat: no-repeat;
+    
+}
+
+.big {
+    margin: 0 auto;
+    width: 600px;
+}
+
+input {
+    position: fixed;
+    margin-top: 10px;
+    width: 600px;
+    height: 40px;
+    color: white;
+    font-size: 20px;
+    background-color: gray;
+    border-radius: 10px;
+    /* z-index: 999; */
+    outline: none;
+}
+
+.container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 600px;
+    background-color: black;
+}
+
+
+#grid {
+    display: grid;
+    position: absolute;
+    width: 600px;
+    height: 1200px;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: 1px solid white;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 60px;
+}
+
+.item {
+    border: 1px solid white;
+    overflow: visible;
+}
+
+.item img {
+    width: 200px;
+    height: 200px;
+}
+
+.item img:active {
+    z-index: 10;
+    transform: scale(1.5);
+}
+
+/* .grid-template-areas {
+    grid-template-areas: 
+        "1 2 3"
+        "4 5 3"
+        "1 2 3"
+        "1 2 3"
+        "1 2 3"
+        "1 2 3"
+        "1 2 3"
+        "1 2 3"
+        "1 2 3"
+        "1 2 3"
+        "1 2 3"
+        "1 2 3"
+        "1 2 3"
+        "1 2 3"
+        "1 2 3"
+        "1 2 3"
+        "1 2 3"
+        "1 2 3"
+} */
+
+ /* .item1 {background-color: aliceblue;}
+ .item2 {background-color: aliceblue;}
+ .item3 {background-color: aliceblue;}
+ .item4 {background-color: aliceblue;}
+ .item5 {background-color: aliceblue;}
+ .item6 {background-color: aliceblue;}
+ .item7 {background-color: aliceblue;}
+ .item8 {background-color: aliceblue;}
+ .item9 {background-color: aliceblue;}
+.item10 {background-color: aliceblue;}
+.item11 {background-color: aliceblue;}
+.item12 {background-color: aliceblue;}
+.item13 {background-color: aliceblue;}
+.item14 {background-color: aliceblue;}
+.item15 {background-color: aliceblue;}
+.item16 {background-color: aliceblue;}
+.item17 {background-color: aliceblue;}
+.item18 {background-color: aliceblue;} */

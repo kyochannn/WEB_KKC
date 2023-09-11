@@ -1,0 +1,13 @@
+
+.container {
+    position: relative;
+    width: 1024px;
+    min-height: 500px;
+    border: 3px dashed orange;
+    margin: auto;
+}
+
+.item {
+    width: 300px;
+    height: 200px;
+}

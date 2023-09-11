@@ -1,0 +1,11 @@
+body img {
+    width: 400px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+body p :nth-of-type(2){
+    border: 1px solid black;
+    float: both;
+}

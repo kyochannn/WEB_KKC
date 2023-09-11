@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM요소</title>
+    <script>
+        let head = document.head            
+        let body = document.body            
+        let title = document.title
+        let url = document.URL
+        let aList = document.anchors
+        let form = document.forms
+        let img = document.images
+
+        // 문서 준비 이벤트
+        document.addEventListener('DOMContentLoaded', () => {       // 콜백함수
+            console.log(head)                // head는 가져와지는데   
+            console.log(body)                // body는 가져와지지 않는다. 아직 밑에 있어서 실행이 안되었으니까
+            document.getElementById('title').innerHTML = title
+            document.getElementById('url').innerHTML = url
+            console.log(aList)
+            console.log(form)
+            console.log(form[0])
+            console.log(form[1])
+            console.log(img)
+        })
+    </script>
+</head>
+<body>
+
+    <h1 id="title"></h1>
+    <h3 id="url"></h3>
+    <ul>
+        <li><a href="http://www.naver.com">네이버 바로가기</a></li>
+        <li><a href="http://www.kakao.com">카카오 바로가기</a></li>
+    </ul>
+
+    <form action=""></form>
+
+    <img src="../../시도/instagram/img/1.jpg" alt="">
+    <img src="../../시도/instagram/img/2.jpg" alt="">
+    <img src="../../시도/instagram/img/3.jpg" alt="">
+</body>
+</html>

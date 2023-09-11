@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM요소</title>
+    <script>
+        let head = document.head            
+        let body = document.body            
+        let title = document.title
+
+
+        document.addEventListener('click', () => {       // 콜백함수
+            
+            document.getElementById('title').innerHTML = title
+            document.getElementById('url').innerHTML = url
+
+            
+            console.log(img)
+        })
+    </script>
+</head>
+<body>
+
+    <h1 id="title"></h1>
+    <ul>
+        <li><a href="http://www.naver.com">네이버 바로가기</a></li>
+        <li><a href="http://www.kakao.com">카카오 바로가기</a></li>
+    </ul>
+
+    <img src="../../시도/instagram/img/1.jpg" alt="">
+    <img src="../../시도/instagram/img/2.jpg" alt="">
+    <img src="../../시도/instagram/img/3.jpg" alt="">
+</body>
+</html>

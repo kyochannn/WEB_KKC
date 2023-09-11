@@ -1,0 +1,19 @@
+
+
+body {
+    border: 3px solid gray;
+    margin: 30px;
+}
+
+.item {
+    border: 3px dashed orange;
+    margin: 10px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}

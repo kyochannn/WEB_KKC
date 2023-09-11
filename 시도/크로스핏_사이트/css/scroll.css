@@ -1,0 +1,42 @@
+/*
+position에 대한 정리
+    static은 기본값이다.
+    relative는 원래 자기가 있어야 할 자리에서 
+    배치하는 움직이는 것을 말하고
+    absolute는 부모를 기준으로 절대적인 위치에서
+    배치한는 것을 말한다
+    fixed는 window를 기준으로 배치해준다.
+    sticky는 원래 있어야 하는 자리를 지키는 것을 말한다.
+
+float에 대한 정리
+    * float : 텍스트와 이미지를 배치하는 용도로 만들어진 것
+              하지만 레이아웃을 배치하는 용도로 사용되어왔다.
+        float: left
+        float: center
+        float: right
+
+Flexbox에 대한 정리
+    * Flexbox : 행 또는 열로 자유자재로 유연하게 해주는 것
+    1. flexbox는 부모인 container와 자식인 item이 필요하다.
+        container의 속성값 (부모)
+            display             : display: flex;
+            flex-direction      : flex-direction: row;  > 기본값
+            flex-wrap           : flex-wrap: wrap;  > 넘치면 다음줄로
+            flex-flow           : flex-direction과 flex-wrap를 합친 것
+            justify-content     : 중심축에세 배치 justify-content: space-around;
+            align-items         : 반대축에서 배치 align-items: center;
+            aling-content *     : 
+        item의 속성값 (자식)
+            order               : 아이템의 순서를 바꿈
+            flex-grow *         : flex-grow: 2; 아이템을 쭉 늘림
+            flex-shrink *       : flex-shrink: 0; 아이템이 어떻게 줄어들지 결정
+            flex-basis *        : 지정해준 값으로 크고 작아짐
+            aling-self          : 아이템 하나만 지정해준다.
+    2. 중심축과 수평축이 있다.
+        중심축을 가로(행)로 잡으면, 수평축은 세로(열)가 되고,
+            flex-direction: row;    > 기본값
+            flex-direction: row-reverse;    
+        중심축을 세로(열)로 잡으면, 수평축은 가로(행)가 된다.
+            flex-direction: column;
+            flex-direction: column-reverse;
+*/

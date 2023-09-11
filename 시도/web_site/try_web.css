@@ -1,0 +1,148 @@
+
+
+body{
+    opacity: 0.9;
+    width: 100%;
+    padding: 0;
+    margin: auto;
+    
+    background: url("img/realback.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100vw;   /* width와 height를 각각 100vw와 100vh로 설정하면 웹사이트에 이미지를 꽉 차게 보여줄 수 있다.*/
+    height: 100vh;   /* vw(viewport width)(화면의 가로폭, 1vw는 뷰포트 너비의 1/100), vh(viewport height)(viewport height화면의 가로폭, 100vh는 뷰포트 너비의 100/100 / 꽉채움) */
+}
+
+.logo12 {
+    margin-left: 20px;
+    margin-top: 5px;
+    width: 80px;
+}
+
+ul {
+    margin-right: 10px;
+}
+li {
+    padding: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+    border-radius: 8px;
+    background-color: black;
+    opacity: 0.8;
+    transition: all 0.3s ease-out;
+    border: 1px solid #272829;
+}
+
+li:hover {
+    padding: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+    border: 1px solid white;
+    border-radius: 8px;
+    background-color: #61677A;
+    opacity: 0.8;
+    transform: scale(130%);
+}
+
+header {
+    padding: 0;
+    margin: 0;
+    background-color: #272829;
+    height: 65px;
+    opacity: 0.9;
+    position: fixed;
+    width: 100%;
+}
+
+logo {
+    margin: auto;
+    float: left;
+    margin-left: 200px;
+}
+
+.logo12 {
+    position: relative;
+}
+
+header .nav {
+    color: wheat;
+    position: relative;
+    top: 0;
+    right: 0;
+    list-style-type: none;
+    margin-right: 200px;
+}
+
+.nav li {
+    float: right;
+    display: inline-block;
+}
+
+.container {
+    margin: auto;
+    padding: 0;
+}
+
+.portfolio {
+    margin: auto;
+    padding: 0;
+}
+
+aside {
+
+    background-color: black;
+    margin: auto;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+img {
+    color: white;
+    border-radius: 10px;
+    transition: all 0.2s ease-in;
+}
+img:hover {
+    color: white;
+    border-radius: 10px;
+    transform: scale(150%);
+}
+
+.img1 {
+    margin-left: 10px;
+
+}
+
+.container .name {
+    margin: auto;
+    height: 350px;
+}
+
+.logo1st {
+    margin-top: 200px;
+    transform: translateX(328%); 
+}
+
+.container .slogan {
+    margin: auto;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    color: white;
+}
+
+.slogan h1 {
+    margin: auto;
+    text-align: center;
+}
+
+footer {
+    text-align: right;
+    color: white;
+    padding: 30px;
+    background-color: #272829 ;
+}
+
+.last {
+    margin-right: 100px;
+}

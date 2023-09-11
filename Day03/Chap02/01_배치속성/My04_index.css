@@ -1,0 +1,57 @@
+.container {
+    padding: 30px;
+    margin: 0;
+}
+
+body>h1 {
+    margin: auto;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.itemlists {
+    margin: auto;
+    width: 50%;
+    min-width: 100px;
+    border: 0;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.itemlists > h1 {
+    font-size: 19px;
+    padding: 12px;
+    margin: 12px 0;
+}
+
+.item{
+    border-radius: 8px;
+    padding: 12px;
+    transition: 0.3s;
+}
+
+.item:hover{
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
+}
+
+
+
+.item h2 {
+    font-size: 15px;
+    font-weight: bolder;
+    line-height: 1.4;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.item img {
+    width: 150px;
+    float: left;
+    border-radius: 4px;
+    margin-right: 8px;
+}
+
+.clear {
+    clear: both;
+}

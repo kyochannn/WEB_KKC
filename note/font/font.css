@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin:auto;
+    width: 500px;
+    height: 400px;
+    background-image: url("img/istockphoto-1248542684-612x612.jpg");
+}
+
+.container h1 {
+    font-size: 150px;
+    display: flex;
+
+}
+
+.container #w1{
+    margin-top: 30px;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 3px 3px 20px black;
+}
+
+.container #w2{
+    margin-top: 30px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+li {
+    padding: 30px;
+    width: 300px;
+    margin: 50px 30px;
+    list-style: none;
+    border: 1px solid black;
+}

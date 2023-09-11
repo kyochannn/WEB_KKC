@@ -1,0 +1,30 @@
+.container {
+    position: relative;
+    width: 1200px;
+    border: 8px solid orange;
+    text-align: center;
+}
+
+.item {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    border: 1px solid gray;
+}
+
+.box1 { padding-top: 20px; }
+.box2 { padding-right: 40px; }
+.box3 { padding-bottom: 40px; }
+.box4 { padding-left: 40px; }
+
+/* 
+    padding 요소의 내부 여백을 지정하는 속성
+
+    .box1 { padding-top: 20px; }
+    .box2 { padding-right: 40px; }
+    .box3 { padding-bottom: 40px; }
+    .box4 { padding-left: 40px; }
+
+    처럼 해서 padding의 속성을 각각 지정해 줄 수 있다.
+*/
+

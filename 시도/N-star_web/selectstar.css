@@ -1,0 +1,189 @@
+* {  
+    margin:0;  /* 브라우저 기본 마진 리셋 */
+    padding:0;  /* 브라우저 기본 패딩 리셋 */
+    box-sizing: border-box;  /* 테두리까지 포함해서 박스 모델 너비로 계산 */
+  }
+  body {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(img/galaxy-11098_1920.jpg)
+    }
+
+  #container {
+    width:1400px;   /* 내용 전체의 너비 */
+    margin:20px auto;  /* 내용을 화면 가운데 배치하도록 좌우 마진을 auto로 */
+    
+  }
+  #header{
+    color: white;
+    font-size: 20px;
+    width:100%;  /* 부모 요소의 너비와 똑같게 */
+    height:120px;  /* 헤더의 높이 */
+    padding-top: 80px;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Gowun Batang', serif;
+    font-family: 'Questrial', sans-serif;
+    font-family: 'Song Myung', serif;
+  }
+  #left-sidebar {
+    width: 200px;   /* 사이드바의 너비 */
+    height:600px;  /* 사이드바의 높이 */
+    float: left;  /* 왼쪽으로 플로팅 */
+  }
+  #contents {
+    width: 1000px;  /* 본문의 너비 */
+    height:600px;   /* 본문의 높이 */
+    float: left;  /* 왼쪽으로 플로팅 */
+    position: relative;
+  }
+
+  #contents #test {
+    position: absolute;
+    border: 1px dashed white;
+    text-align: center;
+    top: 180px;
+    border-radius: 100%;
+    left: 100px;
+    padding: 150px;
+    width: 800px;
+    color: white;
+  }
+
+  #contents #test2 {
+    position: absolute;
+    border: 1px dashed white;
+    text-align: center;
+    top: 120px;
+    border-radius: 100%;
+    left: 100px;
+    padding: 150px;
+    width: 800px;
+    color: white;
+  }
+
+  #contents #sunid{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  } 
+
+  /* 별자리 타원에 위치시키기 시작부분 */
+  #contents .imgstar #star1 {
+    position: absolute;
+    left: 90px;
+    top: 320px;
+  }
+
+  #contents .imgstar #star2 {
+    position: absolute;
+    left: 370px;
+    top: 70px;
+  }
+
+  #contents .imgstar #star3 {
+    position: absolute;
+    left: 220px;
+    top: 100px;
+  }
+
+  #contents .imgstar #star4 {
+    position: absolute;
+    left: 90px;
+    top: 170px;
+  }
+
+  #contents .imgstar #star5 {
+    position: absolute;
+    left: 229px;
+    top: 390px;
+  }
+
+  #contents .imgstar #star6 {
+    position: absolute;
+    left: 370px;
+    top: 420px;
+  }
+
+  #contents .imgstar #star7 {
+    position: absolute;
+    left: 520px;
+    top: 420px;
+  }
+
+  #contents .imgstar #star8 {
+    position: absolute;
+    left: 670px;
+    top: 390px;
+  }
+
+  #contents .imgstar #star9 {
+    position: absolute;
+    left: 800px;
+    top: 330px;
+  }
+
+  #contents .imgstar #star10 {
+    position: absolute;
+    left: 800px;
+    top: 160px;
+  }
+
+  #contents .imgstar #star11 {
+    position: absolute;
+    left: 670px;
+    top: 100px;
+  }
+
+  #contents .imgstar #star12 {
+    position: absolute;
+    left: 520px;
+    top: 70px;
+  }
+    /* 별자리 타원에 위치시키기 끝부분 */
+
+  #contents #sunid {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    transition: 0.3s;
+  }
+
+  #contents #earthid {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    transition: 0.3s;
+  }
+
+  #contents .imgstar img {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    transition: 0.3s;
+    box-shadow: 0px 0px 10px g;
+    border-radius: 25px;
+  }
+
+  #contents .imgstar img:hover {
+    transition: 0.3s;
+    transform: scale(1.5);
+  }
+
+
+  #right-sidebar {
+    width: 200px;   /* 사이드바의 너비 */
+    height:600px;  /* 사이드바의 높이 */
+    float: left;  /* 왼쪽으로 플로팅 */
+  }
+
+  #footer {
+    font-size: 10px;
+    padding-top: 80px;
+    text-align: center;
+    color: white;
+    width:100%;  /* 부모 요소의 너비와 똑같게  */
+    height:100px;  /* 푸터의 높이 */
+    clear:left;		/* 플로팅 해제 */
+  }

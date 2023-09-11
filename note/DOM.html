@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM연습</title>
+</head>
+<body>
+    <div class="container">
+        <h1>글자색 바꾸기</h1>
+        <img id="pic" src="../시도/instagram/img/12.jpg" alt="사진">
+        <button>상세정보 보기        </button>
+            <p class="detail">
+                그러므로 위하여, 예수는 위하여 하여도 피고, 사막이다. 위하여서, 맺어, 가치를 이상은 방황하였으며, 따뜻한 풀밭에 청춘의 거선의 황금시대다. 내는 트고, 이상은 소리다.이것은 우는 사는가 우리 내려온 노년에게서 것이다. 석가는 동력은 이상, 밝은 청춘을 있는 부패뿐이다. 이상 그들의 인간은 것이다. 얼마나 품으며, 두손을 있으랴? 얼음에 스며들어 것이 속에 청춘에서만 그들은 부패뿐이다. 것은 커다란 싸인 따뜻한 피는 피고, 약동하다. 크고 같은 뛰노는 것이다.
+
+                온갖 그것을 황금시대의 때문이다. 크고 목숨을 사는가 많이 이상의 따뜻한 말이다. 피고, 군영과 놀이 실현에 황금시대다. 그들의 것은 사는가 넣는 피는 광야에서 같은 그들은 끓는다. 석가는 새가 청춘이 같이 더운지라 긴지라 하는 인간에 고동을 것이다. 인간에 투명하되 위하여서, 발휘하기 무엇을 때까지 그들은 칼이다. 새가 군영과 노래하며 커다란 이상을 인간에 발휘하기 칼이다. 뭇 희망의 구하지 할지니, 황금시대다. 바이며, 것은 싸인 길지 이것이다. 그것을 가지에 꽃이 위하여, 그들을 것이다.
+
+                심장의 튼튼하며, 안고, 것이다. 든 미묘한 석가는 사랑의 대고, 지혜는 이것을 끓는다. 일월과 그들의 이 소담스러운 싶이 가치를 사막이다. 목숨을 있는 위하여 기쁘며, 거친 새 커다란 이 고동을 이것이다. 그들은 충분히 있는 옷을 목숨을 것이다. 청춘의 것이 얼마나 바이며, 동력은 끝까지 불어 말이다. 스며들어 창공에 인간이 부패뿐이다. 방황하였으며, 군영과 구하기 그들을 그들의 못할 아름답고 보내는 위하여 것이다. 두기 새가 우리의 무한한 귀는 날카로우나 찾아다녀도, 사막이다. 많이 곧 내려온 원질이 풀밭에 이것이다. 굳세게 인도하겠다는 뛰노는 창공에 황금시대의 피다.
+            </p>
+
+    </div>
+
+    <script>
+        var pic = document.querySelector("#pic");
+        pic.addEventListener("mouseover", changePic, false)
+        pic.addEventListener("mouseout", originPic, false)
+        
+        function changePic() {
+            pic.src = "../시도/instagram/img/1.jpg"
+        }
+        function originPic() {
+            pic.src = "../시도/instagram/img/12.jpg"
+        }
+
+        var h1change = document.querySelector("h1");
+        h1change.addEventListener("mouseover", () => {
+            h1change.style.color = "red"
+        })
+        h1change.addEventListener("mouseout", () => {
+            h1change.style.color = "black"
+        })
+
+        var isOpen = false;
+        var pushButton = document.querySelector("button");
+        pushButton.addEventListener("click", () => {
+
+            if( isOpen == false ) {
+                // pushButton.style.backgroundColor = "red"    
+                isOpen = true
+                document.querySelector(".detail").style.display = "inline-block"
+            } else {
+
+                document.querySelector(".detail").style.display = "none"
+                isOpen = false
+            }
+            //     view.innerText = "닫기"
+                
+        })
+
+        
+    </script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+
+        }
+        #pic {
+            display: inline-block;
+            width: 400px;
+        }
+        .detail {
+            display: none;
+        }
+
+    </style>
+</body>
+</html>

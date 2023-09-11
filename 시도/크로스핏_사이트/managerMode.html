@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>와드 모드 (manager)</title>
+    <link rel="stylesheet" href="./css/managerMode.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // 느낌이 살짝 대상을 선택해서해서 추가/조작하고, 대상을 선택해서해서 추가/조작하고 이런 느낌이네
+
+            // 리스트에 대한 것들
+            const ul = document.getElementById('list')
+            const li = document.createElement('li')
+            const li2 = document.createElement('li')
+            const text = document.createTextNode('예시) 푸쉬업 10회 30초')
+            const text2 = document.createTextNode('예시) 풀업 4회 10초')
+
+            li.appendChild(text)
+            li2.appendChild(text2)
+            ul.appendChild(li)
+            ul.appendChild(li2)
+
+            // 버튼에 대한 것들 선언해주고
+            const btnCreate = document.getElementById('create')
+            const btnRemove = document.getElementById('remove')
+            const btnRemove2 = document.getElementById('remove2')
+            const input = document.getElementById('input')
+
+            // 버튼에 대한 옵션 추가하기 (이벤트 헨들러로)
+            btnCreate.addEventListener('click', addList => {
+                const ul = document.querySelector('#list')
+                const li = document.createElement('li')
+                const input = document.getElementById('input')
+                const text = document.createTextNode(input.value)
+
+                li.appendChild(text)
+                ul.appendChild(li)
+                input.value = ''
+
+                // enter 입력 어케하는거야...
+
+
+
+
+
+
+
+
+
+
+                // 이 부분에 추가해 주고 싶은데
+            })
+
+            // 삭제해주는데 위에서부터 삭제해 주는 놈
+            btnRemove.addEventListener('click', removeList => {
+                const ul = document.querySelector('#list')
+                const lists = document.querySelectorAll("#list li")
+
+                ul.removeChild(lists[0])
+            })
+
+            // 삭제해주는데 아래에서부터 삭제해 주는 놈
+            btnRemove2.addEventListener('click', removeLastListItem => {
+                const ul = document.querySelector('#list')
+                const lists = document.querySelectorAll("#list li")
+                const lastEndexItem = lists[lists.length - 1] /* index니까 -1.. 해주자 */
+
+                ul.removeChild(lastEndexItem);
+            })
+
+            /* 버튼을 누르면 팝업이 되는 이벤트 처리 */
+            const popupbutton = document.querySelector("#popupbutton")
+            const myDiv = document.querySelector(".wodsel");
+            popupbutton.addEventListener('click', () => {
+                if (myDiv.style.display === "none") {
+                    myDiv.style.display = "block";
+                } else {
+                    myDiv.style.display = "none";
+                }
+            })
+            /* header 부분 지정시간마다 이미지 변경 */
+            // const imagePaths = ["../img/slide_bg_1.jpg", "../img/slide_bg_2.jpg", "../img/slide_bg_3.jpg"];
+            // let currentIndex = 0; // 현재 이미지 인덱스
+
+            // // 이미지 변경 함수
+            // function changeImage() {
+            //     const headerElement = document.querySelector("header");
+
+            //     // 다음 이미지 인덱스 계산
+            //     currentIndex = (currentIndex + 1) % imagePaths.length;
+
+            //     // 배경 이미지 소스 변경
+            //     headerElement.style.backgroundImage = `url(${imagePaths[currentIndex]})`;
+            // }
+
+            // // 페이지 로드 시 이미지 변경 함수 호출
+            // window.addEventListener("load", () => {
+            //     // 초기 이미지 표시
+            //     changeImage();
+
+            //     // 5초마다 이미지 변경 함수 호출
+            //     setInterval(changeImage, 5000); // 5000 밀리초(5초)
+            // });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="container">
+        <header id="header">
+            <h1 onclick="alert('오늘은 어떤 운동을 할건가요?')""> WorkOut of the Day </h1>
+        </header>
+            <aside id="left-sidebar">
+                <!-- <h2> 사이드바1 </h2>				 -->
+            </aside>
+            <button id="popupbutton">운동 추가하기</button>
+            <section id="contents">
+                <br><br><br><br>
+                <hr>
+                <ul id="list"></ul>
+                <br><br>
+                <hr><br><br><br>
+                <div class="wodsel">
+                    <h2>어떤 운동을 추가할까요?</h2>
+                    <input type="text" name="input" id="input" placeholder="운동을 추가해 주세요.">
+                    <br>
+                    <div class="buttoncon">
+                        <button id="create">추가</button>
+                        <button id="remove">위에서부터 삭제</button>
+                        <button id="remove2">아래에서부터 삭제</button>
+                    </div>
+                </div>
+            </section>
+            <aside id="right-sidebar">
+                <!-- <h2> 사이드바2 </h2> -->
+        </aside>
+        <footer id="footer">
+            <p>&copy; 2023 Crossfit247. All Rights Reserved.</p>
+            <p>Privacy Policy | Terms of Service</p>
+        </footer>
+    </div>
+</body>
+</html>

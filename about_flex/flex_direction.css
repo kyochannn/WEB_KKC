@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+ul{
+    display: flex;
+    padding: 0;
+    list-style-type: none;
+    height: 300px;
+    font-size: 30px;
+
+    /* 
+    flex-direction: row;
+    flex-wrap: nowrap; */
+
+    flex-flow: row nowrap;
+    /* flex-direction과 flex-wrap을 한번에 단축속성으로 지정할 수 있따. */
+}
+
+/* 
+    1. flex_direction의 속성들
+    fow : 기본값, 주측은 행이고 방향은 콘텐츠의 방향과 동일
+    row-reverse : 주측은 행이고 방향은 콘텐츠의 방향과 반대
+    column : 주측은 열이고 방향은 콘텐츠 방향과 동일
+    column-reverse : 주측은 열이고 방향은 콘텐츠 방향과 반대
+
+    2. fles_wrap
+    nowrap : 기본값, 공간이 부족하더라도 요소를 한줄에 배치
+    wrap : 공간 크기에 따라 요소가 열 행에 거쳐 배치
+    wrap-reverse : wrap과 동일하나 요소 나열되는 시점과 끝점이 반대
+*/
+

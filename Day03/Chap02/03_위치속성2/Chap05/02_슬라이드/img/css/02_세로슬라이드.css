@@ -1,0 +1,29 @@
+.container {
+    position: relative;
+    width: 800px;
+    height: 400px;
+    margin: 0 auto;
+    border: 10px solid black;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    width: calc(800px * 3s);
+    animation-name: slide;
+    animation-duration: 8s;
+    animation-timing-function: ease;      /* 타이밍 함수 */
+    animation-iteration-count: infinite;
+}
+
+.slide img {
+    width: 800px;
+    height: 400px;
+    float: left;
+}
+
+@keyframes slide {
+    0% { top: 0px; }
+    33% { top: -400px; }
+    100% { top: -800px; }
+}

@@ -1,0 +1,33 @@
+/* 
+    justify-content
+    flex-box를 사용하면 요소들이 다닥다닥 붙어있는 형태로 존재한다는 것을 알 수 있다.
+    그래서 justify-content는 요소 사이의 공간을 분배하는 방식을 결정한다.
+
+    justify-content의 속성값
+ 
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+ul{
+    display: flex;
+    padding: 0;
+    list-style-type: none;
+    height: 300px;
+
+    border: 5px solid red;
+
+    justify-content: space-evenly;
+    font-size: 30px;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Questrial', sans-serif;
+    font-family: 'Song Myung', serif;
+
+    color: rgba(0, 0, 255, 1);
+}

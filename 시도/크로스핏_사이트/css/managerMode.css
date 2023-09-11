@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  /* 브라우저 기본 마진 리셋 */
+  padding: 0;
+  /* 브라우저 기본 패딩 리셋 */
+  box-sizing: border-box;
+  /* 테두리까지 포함해서 박스 모델 너비로 계산 */
+}
+
+#container {
+  /* width:1200px;   내용 전체의 너비 */
+  /* margin:20px auto;  내용을 화면 가운데 배치하도록 좌우 마진을 auto로 */
+  color: white;
+  background-color: black;
+}
+
+header {
+  background-image: url("../img/headerback1.jpg!d");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  /* height: 50% */
+  /* background-color:  rgb(136, 167, 136); */
+  padding: 20vh;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+#header h1 {
+  display: flex;
+  text-shadow: 3px 3px 3px black;
+  justify-content: center;
+}
+
+#left-sidebar {
+  float: left;
+  width: 10%;
+  height: 300px;
+  /* background: lightgoldenrodyellow; */
+  padding: 20px;
+}
+
+#popupbutton {
+  padding: 10px;
+  position: fixed;
+  top: 90vh;
+  right: 6vw;
+  z-index: 10;
+  border-radius: 30px;
+}
+
+#popupbutton:hover {
+  background-color: yellow;
+}
+
+#contents {
+  width: 80%;
+  /* 본문의 너비 */
+  height: 600px;
+  /* 본문의 높이 */
+  /* background-color:#f7f7f7; */
+  float: left;
+  /* 왼쪽으로 플로팅 */
+}
+
+#contents #list {
+  margin-top: 10%;
+  font-size: 30px;
+  text-align: center;
+  list-style-type: none;
+}
+
+#list li {
+  margin-bottom: 10px;
+}
+
+/* popup */
+.wodsel {
+  display: none;
+  position: fixed;
+  top: 55vh;
+  right: 5vw;
+  padding: 100px 10px;
+  background-color: gray;
+  border-radius: 10px;
+}
+
+#contents input {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 30px;
+  border-radius: 50px;
+}
+
+.wodsel h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  border-bottom: white;
+}
+
+.wodsel input {
+  border: none;
+  width: 280px;
+}
+
+.buttoncon {
+  display: flex;
+  justify-content: center;
+
+}
+
+.buttoncon>button {
+  margin: 0 5px;
+  padding: 5px;
+  font-size: 15px;
+  border-radius: 10px;
+  border: none;
+}
+
+.buttoncon>button:hover {
+  background-color: yellowgreen;
+}
+
+
+#right-sidebar {
+  float: right;
+  width: 10%;
+  height: 300px;
+  /* background: lightgoldenrodyellow; */
+  padding: 20px;
+}
+
+#footer {
+  text-align: center;
+  padding: auto 0;
+  width: 100%;
+  /* 부모 요소의 너비와 똑같게  */
+  height: 50px;
+  /* 푸터의 높이 */
+  background-color: #888888;
+  clear: left;
+}

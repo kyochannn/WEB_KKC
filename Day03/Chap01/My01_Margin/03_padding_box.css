@@ -1,0 +1,35 @@
+.container {
+    position: relative;
+    width: 1200px;
+    border: 8px solid orange;
+    text-align: center;
+}
+
+.item {
+    width: 100px;
+    height: 100px;
+    line-height: 100;
+    background-color: #ddd;
+}
+
+.box1 {
+    padding: 20px;
+    box-sizing: content-box;
+    /* 
+        box-sizing은 content-box가 기본값이다.
+        border-box는 content, padding, border을 포함한 박스의 크기로 지정한다.
+        box-sizing을 border-box로 해주지 않았기 때문에 컨텐츠의 크기 자체가 커짐을 알 수 있다.
+     */
+}
+
+.box2 {
+    padding: 20px;
+    box-sizing: border-box;
+
+    /* box-sizing을 border-box로 해주면 border의 크기로 사이즈를 맞추어준다. */
+}
+
+/* 
+    여기서 정리하고 넘어갈 것은 box-sizing을 border로 한정해주면,
+    실제 border의 키기로 사이즈를 제한해준다.
+*/

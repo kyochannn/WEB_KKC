@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프로토타입</title>
+    <script>
+
+
+        function Person(name, age) {
+            this.name = name
+            this.age = age
+        }
+
+        //객체를 생성
+        let person = new Person('구교찬', 20)
+
+        // 객체 속성 정의
+        document.write(`이름 : ${person.name} <br>`)
+        document.write(`나이 : ${person.age} <br>`)
+
+        delete person.age
+        document.write(`이름 : ${person.age} <br>`)
+        // 위에서 객체 속성을 삭제해 주었기 때문이다.
+
+        let person2 = new Person('박조은', 30)
+        document.write(`이름 : ${person2.name} <br>`)
+        document.write(`나이 : ${person2.age} <br>`)
+
+        person2.printInfo = function() {
+            return this.name + '(' + this.age + ')'
+        }
+
+        person2.title = '새로운 속성 추가'
+
+        document.write(person2.printInfo() + '<br>') 
+        document.write('title : ' + person2.title)
+
+
+        // 프로토 타입을 통해서 원본에 접근을 할 수 있고, 원본에 접근해서 수정해 줄 수 있다.
+        Person.prototype.getInfo = function() {
+            document.write(` - 이름 : ${this.name} <br>
+                            - 나이 : ${this.age} <br>`)
+        }
+
+        person.getInfo()
+        person2.getInfo()
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

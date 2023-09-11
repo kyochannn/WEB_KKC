@@ -1,0 +1,32 @@
+
+.container {
+    position: relative;
+}
+
+.item {
+    margin: 10px 20px 30px 40px;
+    margin: 10px 20px 30px;
+    margin: 10px 20px;
+    margin: 10px;
+
+    display: inline-block;
+    width: 200px;
+    height: 20px;
+    border: 3px solid gray;
+    background-color: red;
+}
+
+/* 
+    한마디로 정리해서 마진은 바깥 여백을 의미한다.
+    마진이 가장 큰 것이고 그 다음으로 보더, 패딩, 콘텐츠 순이다.
+    마진의 크기를 조걸할 때는 다음과 같이 지정해 줄 수 있다.
+
+    margin: 10px 20px 30px 40px;
+    을 통해서 상하좌우의 마진을 줄 수 있고
+    margin: 10px 20px 30px;
+    을 통해서 상 좌우 하 마진을 줄 수 있고
+    margin: 10px 20px;
+    을 통해서 상하 좌우 마진을 줄 수 있고
+    margin: 10px;
+    을 통해서 상하좌우 10px씩 줄 수 있댜.
+*/

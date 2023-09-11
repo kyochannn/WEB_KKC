@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 자바스크립트 코드는 <script> 태그 안에서 작성한다. -->
+    <script>
+        // 변수선언
+        // let 변수명 : 변수 선언 키워드
+        //          - 2015년 이후의 자바스크립트 문법
+
+        // var 변수명 : 변수 선언 키워드
+        //          - 1995~2015 까지의 자바스크립트 문법
+
+        // const    : 상수 선언 키워드
+
+        // 변수      : 데이터를 저장하는 메모리 공간
+        // 상수      : 한 번 초기화 한 값을 변경하지 않는 메모리
+
+        const p1 = 10
+        const p2 = 20
+        let sum = p1 + p2
+
+        // 자바스크립트에서는 문장구분 기호(;)을 생략할 수 있다.
+
+        var a = 100
+        var b = 200
+        var result = a + b
+
+        // var
+        // - 정의된 변수 중복선언 선언 혀용
+        // - 변수의 사용범위를 전역변수, 함수범위만 가능
+        var a = 1
+
+        let x = 1000
+        let y = 2000
+        let total = x + y
+
+
+        // let
+        // - 정의돈 변수 중복선언 불가
+        // - 번수의 사용범위를 전역범위, 함수범위, 블록범위{ } 까지 가능
+        // let x = 10      // 중복선언했기 때문에 에러가 발생한다.
+
+        
+        // console.log()    : 개발도구 콘솔 탭에 로그를 출력하는 함수
+        // * log 만 써도 자동완성 가능
+        console.log('sum : ' + sum)
+        console.log('result : ' + result)
+        console.log('total : ' + total)
+
+        let test
+        console.log(test)
+        // undefined : 타입도 값도 정해해지지 않는 키워드, 변수를 선언 했지만 값을 초기화하지 않는 경우 나온다.
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

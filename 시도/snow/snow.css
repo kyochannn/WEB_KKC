@@ -1,0 +1,58 @@
+body {
+    height: 100vh;
+    background: radial-gradient(ellipse at bottom, #1b2735, #090a0f 100%);
+    overflow: hidden;
+}
+
+.snow {
+    width: 10px;
+    height: 10px;
+    opacity: 0;
+    background-color: white;
+    border-radius: 50%;
+    animation: snow 10s linear infinite;
+}
+
+.snow:nth-of-type(2n){
+    width: 7px;
+    height: 7px;
+    animation-duration: 7s;
+    animation-delay: 1s;
+}
+
+.snow:nth-of-type(2n+1){
+    animation-duration: 8s;
+    animation-delay: 2s;
+}
+
+.snow:nth-of-type(9n){
+    animation-duration: 9s;
+    animation-delay: 3s;
+}
+
+@keyframes snow {
+    0% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+    20% {
+        opacity: 1;
+        transform: translate(-15px, 20vh);
+    }
+    40% {
+        opacity: 1;
+        transform: translate(15px, 40vh);
+    }
+    60% {
+        opacity: 1;
+        transform: translate(-15px, 60vh);
+    }
+    80% {
+        opacity: 1;
+        transform: translate(0, 80vh);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(100vh);
+    }
+}

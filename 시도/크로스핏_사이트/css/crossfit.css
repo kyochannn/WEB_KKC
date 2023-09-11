@@ -1,0 +1,536 @@
+* {
+  margin: 0;
+  /* 브라우저 기본 마진 리셋 */
+  padding: 0;
+  /* 브라우저 기본 패딩 리셋 */
+  box-sizing: border-box;
+  /* 테두리까지 포함해서 박스 모델 너비로 계산 */
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background: black;
+  /* position: fixed; */
+  overflow-x: hidden;
+  /* 가로 스크롤 없애줌 */
+}
+
+
+/* wfjsoifnlsjndkfnsd */
+
+/* 커서깜빡임 시작 */
+#hometext .wrap {
+  margin-top: 100px;
+  position: relative;
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px black;
+}
+
+.sm-text {
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Gowun Batang', serif;
+  font-family: 'Questrial', sans-serif;
+  font-family: 'Song Myung', serif;
+}
+
+h1>.material-symbols-outlined {
+  font-size: 150px;
+}
+
+.lg-text {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.sm-text {
+  font-size: 1.3rem;
+}
+
+#dynamic {
+  position: relative;
+  display: inline-block;
+}
+
+#dynamic::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: -10px;
+  width: 4px;
+  height: 100%;
+  background-color: white;
+}
+
+#dynamic.active::after {
+  display: none;
+}
+
+/* 커서깜빡임 끝 */
+
+.slide img {
+  width: 100vw;
+  height: 100vh;
+  max-height: 100%;
+  /* max-height: 100%; */
+
+  /* position: absolute; */
+}
+
+.slide {
+  /* position: absolute; */
+  /* animation-name: slide; */
+  /* animation-duration: 10s; */
+  animation-timing-function: ease;
+  /* 타이밍 함수 */
+  animation-iteration-count: infinite;
+  /* animation-delay: 100s; */
+}
+
+.slide .item {
+  position: absolute;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+
+/* 첫번째 item 슬라이드만 제외하고 투명하게 */
+.slide .item:not(:first-of-type) {
+  opacity: 0;
+  /* 투명도 : 0~1 */
+}
+
+.slide .item:nth-of-type(1) {
+  animation-name: slide1;
+}
+
+.slide .item:nth-of-type(2) {
+  animation-name: slide2;
+}
+
+.slide .item:nth-of-type(3) {
+  animation-name: slide3;
+}
+
+.slide .item:nth-of-type(4) {
+  animation-name: slide4;
+}
+
+.slide .item:nth-of-type(5) {
+  animation-name: slide5;
+}
+
+
+@keyframes slide1 {
+  20% {
+    opacity: 1;
+  }
+
+  40% {
+    opacity: 0;
+  }
+
+  60% {
+    opacity: 0;
+  }
+
+  80% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes slide2 {
+  20% {
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 1;
+  }
+
+  60% {
+    opacity: 0;
+  }
+
+  80% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes slide3 {
+  20% {
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0;
+  }
+
+  60% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes slide4 {
+  20% {
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0;
+  }
+
+  60% {
+    opacity: 0;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes slide5 {
+  20% {
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0;
+  }
+
+  60% {
+    opacity: 0;
+  }
+
+  80% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+#container {
+  overflow: hidden;
+  position: relative;
+  height: 95%;
+  width: 100%;
+  /* 내용 전체의 너비 */
+  /* margin:0;  내용을 화면 가운데 배치하도록 좌우 마진을 auto로 */
+}
+
+#header {
+  position: fixed;
+  width: 100%;
+  /* 부모 요소의 너비와 똑같게 */
+  height: 10vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+  margin-left: 10%;
+  font-size: 40px;
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Gowun Batang', serif;
+  font-family: 'Questrial', sans-serif;
+  font-family: 'Song Myung', serif;
+}
+
+header ul {
+  display: flex;
+  font-size: 20px;
+  justify-content: flex-end;
+  margin-right: 10%;
+}
+
+header ul li {
+  list-style-type: none;
+  justify-content: flex-end;
+  margin-right: 40px;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+header ul li a:hover {
+  text-decoration: none;
+  transform: scale(1.2);
+  color: yellow;
+}
+
+#left-sidebar {
+  width: 20%;
+  /* 사이드바의 너비 */
+  height: 600px;
+  /* 사이드바의 높이 */
+  float: left;
+  /* 왼쪽으로 플로팅 */
+}
+
+#contents {
+  margin-top: 8%;
+  width: 60%;
+  /* 본문의 너비 */
+  height: 220%;
+  /* 본문의 높이 */
+  color: white;
+  float: left;
+  /* 왼쪽으로 플로팅 */
+}
+
+#contents h2 {
+  text-shadow: 3px 3px black;
+  text-align: center;
+  font-size: 40px;
+  margin: 10%;
+  font-family: 'Anton', sans-serif;
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Gowun Batang', serif;
+  font-family: 'Questrial', sans-serif;
+  font-family: 'Song Myung', serif;
+
+}
+
+#contents h5 {
+  text-shadow: 3px 3px black;
+  text-align: center;
+  font-size: 20px;
+  margin: 10%;
+}
+
+#contents .imgdiv {
+  display: flex;
+  justify-content: center;
+  /* opacity: 0.8; */
+}
+
+#contents img {
+  margin-top: 80px;
+  height: 150px;
+  transition: 0.3s;
+  border-radius: 30px;
+  box-shadow: 3px 3px 5px black;
+}
+
+.img1 {
+  margin: 0 40px;
+}
+
+#contents img:hover {
+  transform: scale(1.2);
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.imgbottomwirte {
+  display: flex;
+  justify-content: space-between;
+  z-index: 99;
+}
+
+.imgbottomwirte>div {
+  color: white;
+}
+
+#right-sidebar {
+  width: 20%;
+  /* 사이드바의 너비 */
+  height: 600px;
+  /* 사이드바의 높이 */
+  float: left;
+  /* 왼쪽으로 플로팅 */
+}
+
+#contents aside h2 {
+  justify-content: center;
+  font-size: 20px;
+}
+
+#contents aside p {
+  justify-content: center;
+  font-size: 20px;
+}
+
+.bottomtlin {
+  border: none;
+  padding: 10px;
+}
+
+#contentsbottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70%;
+  height: 100vh;
+  color: white;
+  clear: both;
+  font-size: 30px;
+}
+
+#contentsbottomText h3 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Gowun Batang', serif;
+  font-family: 'Questrial', sans-serif;
+  font-family: 'Song Myung', serif;
+}
+
+._247info {
+  /* display: flex;
+    justify-content: center; */
+  text-align: center;
+  display: inline-block;
+  margin-left: 30px;
+  font-size: 20px;
+}
+
+._247info>div {
+  border-bottom: 2px solid white;
+  padding: 20px;
+  font-size: 30px;
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Gowun Batang', serif;
+  font-family: 'Questrial', sans-serif;
+  font-family: 'Song Myung', serif;
+}
+
+._247info p {
+  padding: 20px;
+}
+
+
+#crossfitinfo {
+  margin-top: 6%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 1000px;
+  background-color: white;
+  clear: both;
+
+
+
+  background-image: url(img/shoes-7103597_1920.jpg);
+
+}
+
+#container2 {
+  height: 100vh;
+  ;
+}
+
+/*  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+#header2 {
+  margin-top: 7%;
+  width: 100%;
+  height: 120px;
+  border-bottom: 3px white;
+  align-items: center;
+
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  text-shadow: 1px 1px black;
+  font-size: 20px;
+}
+
+#contents2 {
+  width: 100%;
+  height: 600px;
+  border: 4px dashed orange;
+  float: left;
+}
+
+#contents2 .imgdiv2 {
+  display: flex;
+  justify-content: center;
+  opacity: 0.7;
+
+}
+
+.imgbottom {
+  /* margin-top: 80px; */
+  height: 300px;
+  margin-right: 80px;
+  transition: 0.3s;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px black;
+}
+
+.imgbottom:hover {
+  transform: scale(1.1);
+}
+
+#footer2 {
+  width: 100%;
+  height: 80px;
+  clear: both;
+  border: 4px dashed red;
+}
+
+
+
+/* 맨 위로 올라가기 css */
+
+
+.goupbtn {
+  top: 82%;
+  left: 93%;
+  width: 50px;
+  height: 50px;
+  border-radius: 80%;
+  background-color: #ffffff;
+  border: red 3px solid;
+  position: fixed;
+  z-index: 2;
+}
+
+.godownbtn {
+  top: 90%;
+  left: 93%;
+  width: 50px;
+  height: 50px;
+  border-radius: 80%;
+  background-color: #ffffff;
+  border: red 3px solid;
+  position: fixed;
+  z-index: 2;
+}

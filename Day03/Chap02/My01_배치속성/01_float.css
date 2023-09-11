@@ -1,0 +1,35 @@
+.container {
+    position: relative;
+    width: 1024px;
+    border: 5px dashed orange;
+}
+
+.item {
+    border: 5px solid red;
+    height: 700px;
+    background-color: aqua;
+}
+
+img.right {
+    float: right;
+}
+img.left {
+    float: left;
+}
+
+/* 
+    float는 뜨다 라는 뜻으로  원래 웹페이지에서 이미지를 어떻게 띄워서 
+    텍스트와 함께 배치할 것인가에 대한 속성이다.
+
+    하지만 float 속성은 원래 이미지와 텍스트 배치 용도로 등장했지만, 
+    요즘에는 레이아웃용으로 많이 사용한다.
+*/
+
+/* 
+    플로트란 무엇인가. 플로트란 요소를 띄뤄서 배치하는 것을 말한다. 오른쪽에
+    띄우고 싶으면 right로 주고 왼쪽에 띄우고 싶으면 left로 주면 된다.
+    플로트를 띄워주면 아래에 있는 요소가 남은 여백에 들어가게 된다.
+
+    다음과 같은 방식으로 float를 사용해준다
+    float:left;
+*/

@@ -1,0 +1,44 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+#container {
+  width: 1200px;
+  margin: 20px auto;
+}
+
+#header {
+  width: 100%;
+  height: 120px;
+  background-color: #acacac;
+}
+
+#sidebar {
+  width: 300px;
+  height: 600px;
+  background-color: #e9e9e9;
+  float: left;
+}
+
+#contents {
+  width: 600px;
+  height: 600px;
+  background-color: #f7f7f7;
+  float: left;
+}
+
+#sidebar2 {
+  width: 300px;
+  height: 600px;
+  background-color: #e9e9e9;
+  float: left;
+}
+
+footer {
+  width: 100%;
+  height: 80px;
+  clear: both;
+  background-color: #888888;
+}

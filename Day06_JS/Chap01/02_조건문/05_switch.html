@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스위치문</title>
+    <script>
+        const input = prompt('input : ')
+
+        // swich(표현식) { case 값 : ~ }
+        // : 표현식과 값이 일치하는 case 문으로 이동한다.
+
+        switch (input % 2) {
+            case 0:
+                alert('even')
+                break;
+            case 1:
+                alert('odd')
+                break;
+            default:
+                alert('숫자 아님')
+                break;
+        }
+        // break
+        // : 현재 속한 제어문 (조건문, 반복문) 을 벗어나는 키워드
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

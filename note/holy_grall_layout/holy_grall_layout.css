@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 100px auto;
+    width: 540px;
+    border: 1px solid gray;
+}
+
+header {
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+nav {
+    box-sizing: border-box;
+    float: left;
+    width: 120px;
+    border-right: 1px solid gray;
+}
+
+nav li {
+    margin-left: 30px;
+}
+
+article {
+    box-sizing: border-box;
+    float: left;
+    width: 300px;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    
+    margin-left: -1px;
+}
+
+aside {
+    box-sizing: border-box;
+    float: left;
+    width: 120px;
+    border-left: 1px solid gray;
+    margin-left: -1px;
+}
+
+.wt {
+    margin: 10px 20px;
+}
+
+footer {
+    clear: both;
+    border-top:1px solid gray ;
+    text-align: center;
+    padding: 20px;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수</title>
+    <script>
+        function cal(mode) {
+            var func = {
+                'plus' : function(left, right) {return left + right },
+                'minus' : function(left, right) {return left - right}
+            }
+            return func[mode];
+        }
+        alert(cal('plus')(2, 1));
+        alert(cal('minus')(2, 1));
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>window</title>
+    <script>
+        document.write(`윈도우 가로 : ${window.innerWidth} <br>`)
+        document.write(`윈도우 세로 : ${window.innerHeight} <br>`)
+        document.write(`윈도우 가로 : ${window.outerWidth} <br>`)
+        document.write(`윈도우 세로 : ${window.outerHeight} <br>`)
+        document.write(`제목 : ${window.document.title} <br>`)
+        console.log( window.innerWidth )
+        console.log( window.innerHeight )
+
+        // 팝업 창
+        // window.open('URL', 팝업창이름, 옵션)
+
+        
+        // let popup = window.open('http://www.naver.com', '네이벙', 'width=100', 'height=100')
+
+
+        // let popup = window.open('./popup.html', '팝업제목', option)
+
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            let btn = document.getElementById('btn')
+            btn.addEventListener('click', () => {
+                popup.close()       //  팝업닫기
+            })
+
+
+            window.addEventListener('scroll', (event) => {
+                // console.log('test')
+                let scroll = window.scrollY     // 현재 스크롤의 위치를 가져온다.
+                let $scrollY = document.getElementById('screenY')
+                $scrollY.textContent = scroll
+
+                // 스크롤 맨 아래 확인
+                // 1. html 전체 높이
+                let docHeight = document.documentElement.scrollHeight
+                console.log(`docHeight : ${docHeight}`);
+
+                // 2. window 의 높이
+                let winHeight = window.innerHeight
+                console.log(`winHeight : ${winHeight}`)
+                console.log(scroll)
+                if ( scroll >= 1000 /* && scroll < 2000 */){
+                    window.scrollTo( 0, 2000 )
+                }
+
+                if( winHeight + scroll >= docHeight ) {
+                    alert( '스크롤 마지막입니다.' )
+                    alert(scroll)
+                }
+
+                
+                // 지정한 스크롤 위치로 이동
+                // scrollTo( 가로위치, 세로위치 )
+                
+                let $top = document.getElementById('top')
+                $top.addEventListener('click', () => {
+
+
+                    // if ( scroll == 4000) {
+                    //     alert( '4000px 입니다.' )
+                    // }
+
+
+                    window.scrollTo( 0,0 )
+
+                })
+            })
+        })
+
+    </script>
+</head>
+<body>
+    <button id="btn">팝업닫기</button>
+
+    <h3 style="position: fixed;">스크롤 위치 : <span id="screenY"></span></h3>
+
+    <div style="height: 5000px;"></div>
+
+    <button id="top">맨 위로 가기</button>
+</body>
+</html>
+
+<!-- 스크롤 부드럽게 하는 방법  -->

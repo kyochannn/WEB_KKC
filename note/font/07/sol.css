@@ -1,0 +1,31 @@
+.container{
+    margin: auto;
+    border: 1px solid black;
+}
+
+.container li {
+    font-size: 20px;
+    list-style-type: none;
+    line-height: 40px;
+    color: red;
+}
+
+li>p {
+    display: inline;
+    color: black;
+    font-size: 15px;
+}
+
+.container2 {
+    margin: auto;
+    padding: 1px;
+    text-align: center;
+    width: 300px;
+    background-color: tomato;
+    color: white;
+    text-shadow: 3px 2px 5px black;
+}
+
+table {
+    border: 1px solid black;
+}

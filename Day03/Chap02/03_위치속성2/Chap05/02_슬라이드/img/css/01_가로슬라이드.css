@@ -1,0 +1,31 @@
+.container {
+    position: relative;
+    width: 800px;
+    height: 400px;
+    margin: 0 auto;
+    border: 10px solid black;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    width: calc(800px * 3s);
+    animation-name: slide;
+    animation-duration: 8s;
+    animation-timing-function: linear;      /* 타이밍 함수 */
+    animation-iteration-count: infinite;
+}
+
+.slide img {
+    width: 800px;
+    height: 400px;
+    float: left;
+}
+
+@keyframes slide {
+    0% { left: 0px; }
+    33% { left: -800px; }
+    100% { left: -1600px; }
+
+
+}

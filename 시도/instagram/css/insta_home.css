@@ -1,0 +1,7 @@
+.grid_conteiner {
+    position: absolute;
+    display: grid;
+    grid-template-rows: 1fr 10fr 3fr;
+    border: 2px dashed orange;
+}
+

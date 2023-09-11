@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+  color: white;
+  /* height: 100%; */
+}
+
+header {
+  background-image: url("../img/headerimg2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 40%;
+  /* height: 50% */
+  /* background-color:  rgb(136, 167, 136); */
+  padding: 20vh;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+nav {
+  float: left;
+  margin-left: 10%;
+  width: 20%;
+  height: 300px;
+  /* background: lightgoldenrodyellow; */
+  padding: 20px;
+}
+
+nav #navimg {
+  margin: 30px 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav h3 {
+  margin: 5vh 0;
+  text-align: center;
+  font-size: 25px;
+}
+
+nav img {
+  display: flex;
+  justify-content: center;
+}
+
+nav p {
+  margin-bottom: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 60%;
+  margin-right: 10%;
+  /* background-color: wheat; */
+  height: 1000px;
+}
+
+article input {
+  height: 35px;
+  border-radius: 50px;
+  border: 1px solid black;
+  margin: 5px;
+}
+
+article #emaillabel {
+  width: 700px;
+}
+
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* article flex 영역 시작 */
+#container {
+  margin: 5vh 60px;
+}
+
+#firstdiv {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+#firstlabel {
+  width: 200px;
+}
+
+#seconddiv {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+#calllabel {
+  display: inline;
+  width: 100px;
+
+}
+
+#whyexerlabel {
+  width: 200px;
+}
+
+#_3thdiv {
+  display: flex;
+}
+
+#emaillabel {
+  width: 100%;
+}
+
+#_4thdiv {
+  text-align: center;
+  /* 내용 가운데 정렬 */
+  padding: 20px;
+  /* 내용 주위에 여백 추가 */
+}
+
+/* 성별 라디오 버튼 컨테이너 스타일링 */
+#sex {
+  display: inline-block;
+  /* 내용을 가로로 나열 */
+  text-align: left;
+  /* 내용 왼쪽 정렬 */
+}
+
+/* 라디오 버튼 스타일링 */
+#sex input[type="radio"] {
+  display: none;
+  /* 실제 라디오 버튼 숨기기 */
+}
+
+/* 라벨 스타일링 */
+#sex label {
+  display: inline-block;
+  cursor: pointer;
+  margin: 5px 10px;
+  /* 라벨 간격 조정 */
+  padding: 5px 10px;
+  /* 라벨 내 여백 추가 */
+  background-color: #3498db;
+  /* 배경색 지정 */
+  color: #fff;
+  /* 글자색 지정 */
+  border-radius: 5px;
+  /* 라벨 모서리 둥글게 만들기 */
+  transition: background-color 0.3s ease;
+  /* 배경색 변경 애니메이션 */
+}
+
+/* 선택된 라벨 스타일링 */
+#sex input[type="radio"]:checked+label {
+  background-color: #e74c3c;
+  /* 선택된 라디오 버튼의 배경색 변경 */
+}
+
+#_5thdiv {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+input[id="cb1"]+label {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #bcbcbc;
+  cursor: pointer;
+}
+
+input[id="cb1"]:checked+label {
+  background-color: tomato;
+}
+
+input[id="cb1"] {
+  display: none;
+}
+
+#_6thdiv {
+  display: flex;
+  justify-content: center;
+}
+
+#_6thdiv button {
+  margin-top: 10px;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  background-color: dodgerblue;
+}
+
+
+/* article flex 영역 끝 */
+
+footer {
+  background-color: white;
+  padding: 30px;
+  text-align: center;
+  color: black;
+}
+
+/* 반응형 레이아웃이 자동정렬 */
+@media (max-width: 600px) {
+
+  nav,
+  article {
+    width: 100%;
+    height: auto;
+  }
+}
